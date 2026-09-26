@@ -1,0 +1,4 @@
+interface:
+  display_name: "工程哲学"
+  short_description: "用互斥决策原则系统审查复杂工程项目的取舍、风险与验证闭环"
+  default_prompt: "Use $engineering-philosophy to review this complex engineering project and expose its key tradeoffs, risks, and decisions."

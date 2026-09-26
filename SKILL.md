@@ -23,11 +23,17 @@ description: 为复杂工程项目提供覆盖价值、证据、架构、接口�
 ## 使用方式
 
 1. 先复述目标、边界、约束、已知事实和未知项。事实、推断、偏好与建议必须分开标注。
-2. 阅读 [references/philosophy-catalog.md](references/philosophy-catalog.md)，按其中的互斥“决策镜头”扫描项目。不要把所有原则机械地写进答案，只保留会改变设计、验证或交付方式的原则。
-3. 需要形成正式评审或项目方案时，阅读 [references/application-workflow.md](references/application-workflow.md)，产出决策账本、风险账本和验证计划。
-4. 项目属于分布式系统、硬件制造、机器学习、基础设施或安全关键系统时，再阅读 [references/domain-overlays.md](references/domain-overlays.md)。领域叠加层只翻译核心原则，不另造重复原则。
-5. 明确原则之间的冲突。工程选择通常位于多个目标构成的 Pareto 前沿；不要声称存在脱离约束的“最佳方案”。
-6. 给出最小的下一步闭环：要决定什么、由什么证据决定、失败时怎样止损、何时复审。
+2. 阅读短索引 [references/lens-index.md](references/lens-index.md)，用 15 个互斥问题扫描项目并选择镜头。不要一开始加载全部原则。
+3. 按审查深度读取镜头文件：
+   - **局部问题**：只读直接命中的 1–3 个镜头；
+   - **标准复杂项目**：读取最可能改变方案的 3–6 个镜头；从零立项时通常包含 V 价值与边界、K 证据与不确定性；
+   - **完整或高保证评审**：仅当用户明确要求完整审查，或项目具有安全关键、强监管、重大资金/现实世界后果时，读取全部 15 个镜头。
+4. 项目属于分布式系统、硬件制造、机器学习、基础设施或安全关键系统时，阅读 [references/domain-overlays.md](references/domain-overlays.md)，再按其中引用的原则 ID 补充对应镜头。领域叠加层只翻译核心原则，不另造重复原则。
+5. 需要形成正式评审或项目方案时，阅读 [references/application-workflow.md](references/application-workflow.md)，产出决策账本、风险账本和验证计划。
+6. 明确原则之间的冲突。工程选择通常位于多个目标构成的 Pareto 前沿；不要声称存在脱离约束的“最佳方案”。出现归类争议、原则冲突或需要扩充目录时，阅读 [references/principle-governance.md](references/principle-governance.md)。
+7. 给出最小的下一步闭环：要决定什么、由什么证据决定、失败时怎样止损、何时复审。
+
+镜头文件必须通过 `lens-index.md` 路由，不要凭文件名猜测内容。选中一个镜头后完整读取该文件；未命中的镜头保持未加载。完整评审虽读取全部镜头，也只输出会改变项目决定的原则。
 
 ## MECE 约束
 

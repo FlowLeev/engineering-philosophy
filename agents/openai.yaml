@@ -1,4 +1,4 @@
 interface:
   display_name: "工程哲学"
-  short_description: "用互斥决策原则和持久评审检查点贯穿复杂工程项目的完整生命周期"
-  default_prompt: "Use $engineering-philosophy to establish and track review checkpoints for this engineering project, asking before standard or full reviews."
+  short_description: "仅在明确评审阶段或评审后有修改的版本发布前执行工程评审"
+  default_prompt: "Use $engineering-philosophy for this explicitly named engineering review stage."

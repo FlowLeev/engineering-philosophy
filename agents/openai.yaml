@@ -1,4 +1,4 @@
 interface:
   display_name: "工程哲学"
-  short_description: "仅在明确评审阶段或评审后有修改的版本发布前执行工程评审"
-  default_prompt: "Use $engineering-philosophy for this explicitly named engineering review stage."
+  short_description: "用户明确进入具体评审阶段，或要求发布且上次已完成评审后有修改时，由不同智能体审查代码"
+  default_prompt: "Use $engineering-philosophy to run this review with one independent reviewer agent per selected lens."

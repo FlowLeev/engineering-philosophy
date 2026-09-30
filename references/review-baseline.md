@@ -14,6 +14,8 @@
 - Source revision or artifact digest:
 - Reviewed scope:
 - Excluded scope:
+- Lens-to-reviewer mapping: lens; canonical agent/task ID; author relation; context mode; status; verdict
+- Independence limitations:
 - Key assumptions and evidence:
 - Result: passed | conditional | failed
 ```
@@ -31,7 +33,7 @@
 3. 用户明确指出的评审结果；
 4. 当前会话内刚完成的评审输出。
 
-不要把普通代码审查、测试通过、发布成功或一句“看过了”当成工程哲学评审基线。不要擅自新建追踪目录；需要持久化且项目没有合适位置时，先征得用户同意。
+不要把普通代码审查、测试通过、发布成功或一句“看过了”当成工程哲学评审基线。只有每个选中镜头都具有唯一 agent/task ID、`non-author` 作者关系、`clean` 上下文、`complete` 状态和有效 verdict 时，才能写成有效的独立评审基线。非独立降级即使经过用户接受，也不能冒充独立基线。不要擅自新建追踪目录；需要持久化且项目没有合适位置时，先征得用户同意。
 
 ## 如何判断评审后修改
 
@@ -78,4 +80,4 @@
 
 ## 评审完成后
 
-用当前评审实际覆盖的对象生成新基线，不自动扩大为整个项目。记录新 revision 或制品摘要、范围、排除项、关键假设、证据和结论。若评审后又发生将进入版本的修改，这个基线立即变旧，下一次发布请求将再次触发增量评审。
+用当前评审实际覆盖的对象生成新基线，不自动扩大为整个项目。记录新 revision 或制品摘要、范围、排除项、镜头—reviewer 映射、独立性限制、关键假设、证据和结论。若评审后又发生将进入版本的修改，这个基线立即变旧，下一次发布请求将再次触发增量评审。
